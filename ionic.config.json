@@ -1,0 +1,8 @@
+{
+  "name": "cccg",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
