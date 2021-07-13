@@ -5,5 +5,19 @@
 </ion-header>
 
 <ion-content>
-
+  <!-- Make sure to che -->
+  <ion-item *ngFor="let event of events">
+    <ion-card>
+      <img src="../../assets/images/borntoaddvalue.JPG" />
+      <ion-card-header>
+        <ion-card-title>{{event.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{event.description}} <br /><br />
+        {{event.date}} ({{event.starttime}} - {{event.endtime}})<br />
+        Location: {{event.location}}<br />
+        Price: {{event.price}}<br />
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
 </ion-content>
