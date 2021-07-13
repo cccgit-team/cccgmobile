@@ -1,0 +1,5 @@
+com/cccg/app/BuildConfig.java
+ com.cccg.app.BuildConfig
+com/cccg/app/MainActivity.java
+ com.cccg.app.MainActivity
+ com.cccg.app.MainActivity$1
