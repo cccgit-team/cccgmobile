@@ -1,0 +1,146 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+
+    <ion-menu contentId="main-content">
+      <ion-content>
+        <!-- <ion-list lines="none">
+          <ion-list-header style="color:white">
+            Publications
+          </ion-list-header>
+          
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="goToNuggets()">
+              <ion-icon slot="start" name="book" color="white"></ion-icon>
+              <ion-label>
+                The Golden Nuggets Blog
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://mailchi.mp/6358c2c3eeb1/cccgalive-8115357')">
+              <ion-icon slot="start" name="bookmarks" color="white"></ion-icon>
+              <ion-label>
+                The CCCG Buzz
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+        </ion-list> -->
+        <br />
+        <br />
+        <ion-list lines="none">
+          <ion-list-header style="color:#ffffff">
+            Connect with Us
+          </ion-list-header>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="goHome()">
+              <ion-icon slot="start" name="home" color="white"></ion-icon>
+              <ion-label>
+                Home
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <!--<ion-item routerLink="/askpastor" routerLinkActive="active" routerDirection="root" detail="false">-->
+            <ion-item (click)="openWebPage('https://app.sli.do/event/e8dxz7ih/live/questions')">
+              <ion-icon slot="start" name="clipboard" color="purple"></ion-icon>
+              <ion-label>
+                Ask Pastor E
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://www.cccghq.org/riderequest')">
+              <ion-icon slot="start" name="car" color="purple"></ion-icon>
+              <ion-label>
+                Request a Ride
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://www.cccghq.org/meet-pastor')">
+              <ion-icon slot="start" name="cafe" color="purple"></ion-icon>
+              <ion-label>
+                Book a Meeting
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://www.cccghq.org/testimonies')">
+              <ion-icon slot="start" name="people" color="purple"></ion-icon>
+              <ion-label>
+                Submit a Testimony!
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <!-- <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/feedback" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="bulb" color="purple"></ion-icon>
+              <ion-label>
+                Feedback/Feature Request
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle> -->
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/testimonybank" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="briefcase" color="purple"></ion-icon>
+              <ion-label>
+                The Testimony Bank!
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://www.cccghq.org/golden-nugget')">
+              <ion-icon slot="start" name="basket" color="purple"></ion-icon>
+              <ion-label>
+                The Nuggets Blog!
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://www.cccghq.org/events')">
+              <ion-icon slot="start" name="calendar" color="purple"></ion-icon>
+              <ion-label>
+                CCCG Events
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item (click)="openWebPage('https://www.cccghq.org/cccg-buzz')">
+              <ion-icon slot="start" name="flash" color="purple"></ion-icon>
+              <ion-label>
+                The Cornerstone Buzz
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <!-- <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/updatecenter" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="alert-outline" color="purple"></ion-icon>
+              <ion-label>
+                CCCG Updates
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle> -->
+
+       </ion-list>
+       
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+
+  </ion-split-pane>
+
+</ion-app>

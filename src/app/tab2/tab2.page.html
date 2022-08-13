@@ -1,0 +1,51 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  
+  <h3 class="top">Discover CCCG</h3>
+  <p style="padding-left: 20px;">Home of Restoration and Transformation</p>
+
+  
+  <ion-card (click)="openWebPage('https://www.cccghq.org/our-story')">
+    <img src="../../assets/images/ourstory.png" style="object-fit: fill;" />
+  </ion-card>
+
+  <br />
+  <br />
+  
+  
+  <ion-card (click)="openWebPage('https://www.cccghq.org/our-pastors')">
+    <img src="../../assets/images/ourpastors.png" style="object-fit: fill;"  />
+  </ion-card>
+  
+    
+  <br />
+  <br />
+
+  <ion-card (click)="openWebPage('https://www.cccghq.org/newguest')">
+    <img src="../../assets/images/firsttime.png" style="object-fit: fill;" />
+  </ion-card>
+
+  <br />
+  <br />
+
+  <ion-card (click)="openWebPage('https://www.cccghq.org/newlife')">
+    <img src="../../assets/images/newbeliever.png" style="object-fit: fill;"  />
+  </ion-card>
+
+  <br />
+  <br />
+
+  <ion-card (click)="openWebPage('https://www.cccghq.org/getinvolved')">
+    <img src="../../assets/images/servewithus.png" style="object-fit: fill;" />
+  </ion-card>
+
+  <br />
+  <br />
+</ion-content>

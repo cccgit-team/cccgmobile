@@ -1,0 +1,28 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  
+  <h3 class="top">Connect</h3>
+  <p style="padding-left: 20px;">Check out and interact with our programs at CCCG</p>
+
+  <br />
+
+  <ion-card (click)="openWebPage('https://www.cccghq.org/training')">
+    <img src="../../assets/images/leadershipclass.png" style="object-fit: fill;" />
+  </ion-card>
+
+  <br />
+  <br />
+
+  <ion-card (click)="openWebPage('https://linktr.ee/CCCG')">
+    <img src="../../assets/images/followoursocials.png" style="object-fit: fill;"  />
+  </ion-card>
+
+  <br />
+</ion-content>

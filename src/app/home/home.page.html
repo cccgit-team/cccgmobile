@@ -1,0 +1,63 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Tune-in</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" pullFactor="0.5" pullMin="100" pullMax="200">
+    <ion-refresher-content  refreshingSpinner="lines">
+    </ion-refresher-content>
+  </ion-refresher>
+  <!-- <ion-toolbar>
+    <ion-segment color="primary"  [(ngModel)]="type"  (ionChange)="segmentChanged($event)" scrollable>
+      <ion-segment-button value="latest" checked>
+        <ion-label class="segment">Broadcasts</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="sermons">
+        <ion-label class="segment">Meet CCCG</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar> -->
+
+  <div *ngIf="dataload">
+  <!-- <div [ngSwitch]="type"> -->
+
+    <ion-list>
+      <ion-text color="white">
+        <ion-title>Watch CCCG</ion-title>
+        <br>
+        <div *ngIf="database.liveVideo.count==1">
+          <ion-list>    
+            <ion-item lines="none">
+                <ion-card (click)="itemTapped(database.liveVideo.videoId, database.liveVideo.videoTitle,database.liveVideo.videoPub)">
+                  <img [src]="database.liveVideo.videoImg" style="object-fit: fill;" />
+                </ion-card>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div *ngIf="database.latestVideo.count==1 && database.liveVideo.count==0">
+          <ion-list>    
+            <ion-item lines="none">
+                <ion-card (click)="itemTapped(database.latestVideo.videoId, database.latestVideo.videoTitle,database.latestVideo.videoPub)">
+                  <img [src]="database.latestVideo.videoImg" style="object-fit: fill;" />
+                </ion-card>
+            </ion-item>
+          </ion-list>
+        </div>
+      </ion-text>
+      <ion-text color="white">
+        <!--<ion-title>Listen to CCCG</ion-title>-->
+        <br>
+        <br>
+      </ion-text>
+      <iframe class="ion-padding-start" src="https://open.spotify.com/embed/show/0sj3zVfd8YfWSKgiXujitn?theme=0" 
+      width="90%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </ion-list>
+  <!-- </div> -->
+</div>
+
+</ion-content>
